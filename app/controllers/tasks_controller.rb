@@ -12,7 +12,7 @@ class TasksController < ApplicationController
   end
 
   def search
-    @tasks = Task.where("task_name LIKE ?", "%" + params[:q] + "%")
+    @tasks = Task.where("task_details LIKE ?", "%" + params[:q] + "%")
   end
 
   # GET /tasks/1
