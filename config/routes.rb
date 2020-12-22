@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root "articles#index" # sets articles index as home page
+  resources :tasks
+  root "tasks#welcome" # sets articles index as home page
 
   resources :articles do # condenses all methods (e.g. get "/articles", to: "articles#index", get "/articles/:id", to: "articles#show") of articles 
     resources :comments
