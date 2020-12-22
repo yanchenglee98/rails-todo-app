@@ -11,6 +11,10 @@ class TasksController < ApplicationController
     @tasks = Task.all
   end
 
+  def search
+    @tasks = Task.where("task_name LIKE ?", "%" + params[:q] + "%")
+  end
+
   # GET /tasks/1
   # GET /tasks/1.json
   def show
