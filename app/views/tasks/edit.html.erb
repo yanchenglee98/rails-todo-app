@@ -4,4 +4,5 @@
 
 </br>
 <%= link_to 'Show', @task, class:"btn btn-secondary" %> 
+<%= link_to 'Delete', @task, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
 <%= link_to 'Back', tasks_path, class:"btn btn-secondary" %>
