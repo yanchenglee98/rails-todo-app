@@ -1,5 +1,11 @@
 # Todo App
 
+Lee Yan Cheng, A0199141B
+
+Use cases, deliverables are in [[documentation](https://github.com/yanchenglee98/rails-todo-app/documentation)] folder
+
+(Todo App is still in development)
+
 Todo App created with Ruby on Rails.
 
 It is currently hosted at https://rails-todo-2020.herokuapp.com/
