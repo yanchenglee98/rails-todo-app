@@ -1,6 +1,6 @@
 <% if user_signed_in? %>
     <br/>
-    <h2>Welcome back</h2>
+    <h2>Welcome back, <%= current_user.email %>!</h2>
 
     You currently have <%= @tasks.count %> task(s)!
 <% else %>
