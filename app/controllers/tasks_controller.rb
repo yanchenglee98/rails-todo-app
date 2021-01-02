@@ -1,6 +1,6 @@
 class TasksController < ApplicationController
   before_action :set_task, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except: [:welcome, :index, :show]
+  before_action :authenticate_user!, except: [:welcome, :index, :show, :about]
   before_action :correct_user, only: [:edit, :update, :destroy]
 
   # GET /tasks
@@ -15,6 +15,9 @@ class TasksController < ApplicationController
 
   def search
     @tasks = Task.where("task_details LIKE ? or task_name LIKE ?", "%" + params[:q] + "%", "%" + params[:q] + "%")
+  end
+
+  def about
   end
 
   # GET /tasks/1

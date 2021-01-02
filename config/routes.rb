@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root "tasks#welcome" # sets articles index as home page
 
   get 'search', to: "tasks#search"
+  get 'about', to: "tasks#about"
 
   resources :articles do # condenses all methods (e.g. get "/articles", to: "articles#index", get "/articles/:id", to: "articles#show") of articles 
     resources :comments
