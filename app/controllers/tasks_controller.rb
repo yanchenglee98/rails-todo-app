@@ -15,6 +15,7 @@ class TasksController < ApplicationController
 
   def search
     @tasks = Task.where("task_details LIKE ? or task_name LIKE ?", "%" + params[:q] + "%", "%" + params[:q] + "%")
+    @query = params[:q]
   end
 
   def about
