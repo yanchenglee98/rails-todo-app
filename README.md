@@ -2,7 +2,7 @@
 
 Lee Yan Cheng, A0199141B
 
-Use cases and other deliverables are in [documentation](https://github.com/yanchenglee98/rails-todo-app/tree/master/documentation) folder
+Use cases, User guide and other deliverables are in [documentation](https://github.com/yanchenglee98/rails-todo-app/tree/master/documentation) folder
 
 (Todo App is still in development)
 
